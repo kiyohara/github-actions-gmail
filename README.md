@@ -6,7 +6,8 @@
 3. Open credentials view via side menu
 
 4. Create "OAuth client ID"
-    - web application
+    - desktop application
+    - internal use
 
 5. Download credentials JSON file by ID list
     - save as `credentials.json`
@@ -25,7 +26,7 @@
 
 11. Test run `$ pipenv run python send_mail.py`
 
-12. Set environments to CircleCI env
+12. Set environments to secrets for GitHub actions
 
 13. Push branch to Github (-> CircleCI do nothing)
 
