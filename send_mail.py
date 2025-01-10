@@ -9,7 +9,7 @@ from google.auth.transport.requests import Request
 def main():
     from_addr = os.environ.get('GOOGLE_API_MAIL_FROM')
     to_addr   = os.environ.get('GOOGLE_API_MAIL_TO')
-    git_tag   = os.environ.get('CIRCLE_TAG')
+    git_tag   = os.environ.get('GITHUB_REF_NAME')
 
     creds = lib.load_google_api_credentials_by_environment()
 
